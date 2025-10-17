@@ -22,11 +22,12 @@ class Persona:
 
 persona1 = Persona("Ivana", 42)
 persona2 = Persona("Pedro", 15)
-
+persona3 = Persona("Pepe", 18)
 print(persona1.nombre)
 print(persona2.nombre)
 print(persona1.especie)
 print(persona2.especie)
+print(persona3.especie)
 
 
 persona1.cambiar_especie_a_cada_objeto("robot")
@@ -34,9 +35,9 @@ persona1.cambiar_especie_a_cada_objeto("robot")
 Persona.cambiar_especie("humanoide")
 print(persona1.especie)
 print(persona2.especie)
+print(persona3.especie)
 
 
-
-#print(Persona.es_mayor_de_edad(20))
-#print(persona1.es_mayor_de_edad(persona1.edad))
-#print(persona2.es_mayor_de_edad(persona2.edad))
+print(Persona.es_mayor_de_edad(20))
+print(persona1.es_mayor_de_edad(persona1.edad))
+print(persona2.es_mayor_de_edad(persona2.edad))

@@ -12,12 +12,13 @@ class CuentaBancaria:
             self.__saldo -= valor
         else:
             print("El monto es mayor al saldo")
+
     def mostrar_saldo(self):
         return f"Saldo actual: ${self.__saldo}"
 
 
 
 cuenta1= CuentaBancaria(propietario="Ivana", saldo_inicial=100)
-cuenta1.depositar(500)
-cuenta1.sacar(200)
+cuenta1.depositar(int(input("Ingresa el monto a depositar: ")))
+cuenta1.sacar((int(input("Ingresa el monto a sacar: "))))
 print(cuenta1.mostrar_saldo())
