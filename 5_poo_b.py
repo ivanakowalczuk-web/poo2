@@ -56,6 +56,7 @@ cahorro1 = Cuentadeahorros("Pedro", 1000)
 
 ccorriente1.retirar(100)
 cahorro1.retirar(100)
+
 #ccorriente1.depositar(300)
 #cahorro1.depositar(300)
 print("Cuenta corriente: ", ccorriente1.mostrar_saldo())
