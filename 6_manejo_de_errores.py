@@ -17,7 +17,7 @@ class CuentaBancaria:
     def retirar(self, monto):
         if monto <= 0:
             raise ValueError("El monto a retirar debe ser mayor que cero.")
-       if monto > self.saldo:
+        if monto > self.saldo:
             raise FondosInsuficientesError("❌ Fondos insuficientes para realizar esta operación.")
         self.saldo -= monto
         print(f"💸 Retiro exitoso. Saldo actual: ${self.saldo}")
@@ -26,7 +26,7 @@ class CuentaBancaria:
 # Uso de la clase con manejo de errores
 try:
     cuenta = CuentaBancaria("Ivana", 1000)
-    cuenta.depositar(500)
+    cuenta.depositar(3000)
     cuenta.retirar(2000)  # Esto genera un error personalizado
 except FondosInsuficientesError as e:
     print(f"Error: {e}")
